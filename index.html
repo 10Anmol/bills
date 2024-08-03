@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Billing Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Smart Billing</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="active">Home</a></li>
+                    <li class="nav-item"><a href="#">Dashboard</a></li>
+                    <li class="nav-item"><a href="../../billing-application/index.html">Invoices</a></li>
+                    <li class="nav-item"><a href="#">Reports</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="user-btn" class="dropbtn">User</a>
+                        <div class="dropdown-content">
+                            <a href="#">Profile</a>
+                            <a href="#">Settings</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Efficient and Smart Billing Management</h2>
+                <p class="hero-text">Manage your billing, invoices, and reports all in one place with ease.</p>
+                <button class="cta-btn">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview">
+            <div class="container overview-container">
+                <!-- Monthly Revenue Card -->
+                <div class="card">
+                    <h3 class="card-title">Monthly Revenue</h3>
+                    <p class="card-text">$15,000</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <!-- Pending Invoices Card -->
+                <div class="card">
+                    <h3 class="card-title">Pending Invoices</h3>
+                    <p class="card-text">5 Invoices</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <!-- Total Clients Card -->
+                <div class="card">
+                    <h3 class="card-title">Total Clients</h3>
+                    <p class="card-text">20 Clients</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details">
+            <div class="container">
+                <h2 class="section-title">Detailed Billing Information</h2>
+                <table class="details-table">
+                    <thead>
+                        <tr>
+                            <th>Invoice Number</th>
+                            <th>Client</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Aman Beniwal</td>
+                            <td>2024-08-01</td>
+                            <td>$200</td>
+                            <td class="status paid">Paid</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Amol Sharma</td>
+                            <td>2024-08-02</td>
+                            <td>$500</td>
+                            <td class="status pending">Pending</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Akshat</td>
+                            <td>2024-08-03</td>
+                            <td>$1,200</td>
+                            <td class="status overdue">Overdue</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Smart Billing Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for User Login -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
